@@ -3,7 +3,6 @@ import MenuItem from "./MenuItem";
 
 const Menu = ({ appData, selectedCategory }) => {
   const handleSubmit = (e) => {
-    console.log("submitted");
     e.preventDefault();
   };
 

@@ -19,9 +19,7 @@ const MenuItem = ({ menu }) => {
   }, [quantity, price]);
 
   const handleForm = (e) => {
-    console.log("submitted");
     e.preventDefault();
-    console.log(quantity, total, notes, foodname);
     if (quantity > 0) {
       dispatch(add({ quantity, total, notes, name: foodname }));
     }

@@ -6,10 +6,8 @@ import { useHistory } from "react-router-dom";
 const Payment = () => {
   const history = useHistory();
 
-  console.log("history", history);
   const cartItems = useSelector((state) => state.userActions.userCart);
   const [combine, setCombine] = useState(0);
-  console.log(cartItems);
 
   useEffect(() => {
     if (cartItems.length > 0) {
